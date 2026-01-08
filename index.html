@@ -1,123 +1,136 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FreshMart | Products</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-    }header {
-  background: #2ecc71;
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Neighborhood Guide</title>
+    <style>
+        :root {
+            --cream: #fdfaf1;
+            --sage: #6b705c;
+            --clay: #a44a3f;
+            --charcoal: #333d29;
+        }
 
-nav {
-  background: #27ae60;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 14px 20px;
-}
+        body {
+            font-family: 'Georgia', serif; /* Gives a classic, editorial feel */
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
 
-nav a:hover {
-  background: #1e8449;
-}
+        /* --- Header & Intro --- */
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f0ead2;
+            border-bottom: 2px solid var(--sage);
+        }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
+        h1 { font-size: 3rem; color: var(--clay); margin-bottom: 1rem; }
+        .tagline { font-style: italic; font-size: 1.2rem; max-width: 600px; margin: auto; }
 
-h2 {
-  color: #27ae60;
-  margin-bottom: 20px;
-}
+        /* --- Navigation --- */
+        nav {
+            background: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #ddd;
+        }
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
+        nav a { text-decoration: none; color: var(--sage); font-weight: bold; font-family: sans-serif; font-size: 0.9rem; }
 
-.product-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
+        /* --- Content Sections --- */
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        
+        section { margin-bottom: 60px; }
+        h2 { color: var(--clay); border-bottom: 1px solid var(--clay); margin-bottom: 1.5rem; }
 
-.product-card h3 {
-  margin: 10px 0;
-}
+        /* --- List Styling --- */
+        .spot-list { list-style: none; }
+        .spot-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border-left: 5px solid var(--sage);
+        }
 
-.product-card p {
-  font-size: 0.95em;
-}
+        .spot-item h3 { margin-bottom: 5px; color: var(--charcoal); }
+        .price-indicator { color: var(--sage); font-weight: bold; font-size: 0.8rem; }
 
-.price {
-  font-weight: bold;
-  color: #2ecc71;
-  margin-top: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #333;
-  color: #fff;
-  margin-top: 40px;
-}
-
-  </style>
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            nav { gap: 10px; font-size: 0.8rem; }
+        }
+    </style>
 </head>
-<body>  <header>
-    <h1>Our Products</h1>
-    <p>Fresh and affordable grocery items</p>
-  </header>  <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>  <div class="container">
-    <h2>Available Items</h2><div class="products">
-  <div class="product-card">
-    <h3>🥬 Fresh Vegetables</h3>
-    <p>Locally sourced greens and vegetables.</p>
-    <div class="price">₱120 / pack</div>
-  </div>
+<body>
 
-  <div class="product-card">
-    <h3>🍎 Fruits</h3>
-    <p>Seasonal fresh fruits.</p>
-    <div class="price">₱150 / pack</div>
-  </div>
+    <header>
+        <h1>Eastside Eats & Retreats</h1>
+        <p class="tagline">A curated collection of the best hidden gems, quiet parks, and local coffee in our little corner of the world.</p>
+    </header>
 
-  <div class="product-card">
-    <h3>🥩 Meat</h3>
-    <p>Quality beef, pork, and chicken.</p>
-    <div class="price">₱320 / kg</div>
-  </div>
+    <nav>
+        <a href="#coffee">COFFEE</a>
+        <a href="#parks">PARKS</a>
+        <a href="#faq">VISITOR INFO</a>
+    </nav>
 
-  <div class="product-card">
-    <h3>🥛 Dairy Products</h3>
-    <p>Milk, cheese, and other dairy items.</p>
-    <div class="price">₱95+</div>
-  </div>
-</div>
+    <div class="container">
+        
+        <section id="coffee">
+            <h2>Best Coffee & Tea</h2>
+            <ul class="spot-list">
+                <li class="spot-item">
+                    <h3>The Copper Kettle <span class="price-indicator">$$</span></h3>
+                    <p>Known for their lavender lattes and extremely fast Wi-Fi. Perfect for getting an hour of work done.</p>
+                </li>
+                <li class="spot-item">
+                    <h3>Old Town Roasters <span class="price-indicator">$</span></h3>
+                    <p>No seats, just incredible beans. Try the Ethiopian pour-over if you're a purist.</p>
+                </li>
+            </ul>
+        </section>
 
-  </div>  <footer>
-    <p>&copy; 2026 FreshMart Grocery</p>
-  </footer></body>
+        <section id="parks">
+            <h2>Quiet Green Spaces</h2>
+            <div class="spot-item">
+                <h3>Willow Creek Loop</h3>
+                <p>A 2-mile flat trail that stays shaded even at midday. Great for dogs and strollers.</p>
+            </div>
+            <div class="spot-item">
+                <h3>The Sunken Garden</h3>
+                <p>Hidden behind the library. It's almost always empty on Tuesday afternoons.</p>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Visitor Tips</h2>
+            <div style="margin-top: 10px;">
+                <p><strong>When is the best time to visit?</strong><br>
+                Mid-week is best. Most shops are closed on Mondays!</p>
+                <br>
+                <p><strong>Is there public parking?</strong><br>
+                Yes, there is a free municipal lot on 4th Street right behind the bakery.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer style="background: var(--charcoal); color: white; text-align: center; padding: 40px;">
+        <p>Made for the neighborhood by a neighbor.</p>
+        <p style="font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Local Guide</p>
+    </footer>
+
+</body>
 </html>
