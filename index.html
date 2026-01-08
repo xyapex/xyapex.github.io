@@ -2,55 +2,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>All About Dogs</title>
+  <title>FreshMart | Products</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background-color: #fdfdfd;
+      background-color: #f7f7f7;
       color: #333;
     }header {
-  background: #ff914d;
+  background: #2ecc71;
   color: #fff;
   padding: 30px 20px;
   text-align: center;
 }
 
 nav {
+  background: #27ae60;
   display: flex;
   justify-content: center;
-  background: #333;
   flex-wrap: wrap;
 }
 
 nav a {
   color: #fff;
-  padding: 14px 20px;
   text-decoration: none;
+  padding: 14px 20px;
 }
 
 nav a:hover {
-  background: #555;
+  background: #1e8449;
 }
 
 .container {
-  padding: 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
-}
-
-section {
-  margin-bottom: 40px;
+  padding: 20px;
 }
 
 h2 {
-  color: #ff914d;
-  margin-bottom: 10px;
+  color: #27ae60;
+  margin-bottom: 20px;
 }
 
-ul {
-  padding-left: 20px;
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.95em;
+}
+
+.price {
+  font-weight: bold;
+  color: #2ecc71;
+  margin-top: 10px;
 }
 
 footer {
@@ -58,75 +77,47 @@ footer {
   padding: 15px;
   background: #333;
   color: #fff;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    text-align: center;
-    border-top: 1px solid #444;
-  }
+  margin-top: 40px;
 }
 
   </style>
 </head>
-<body>  <!-- Homepage -->  <header id="home">
-    <h1>All About Dogs</h1>
-    <p>Your simple guide to man’s best friend 🐶</p>
+<body>  <header>
+    <h1>Our Products</h1>
+    <p>Fresh and affordable grocery items</p>
   </header>  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Dogs</a>
-    <a href="#breeds">Dog Breeds</a>
-    <a href="#care">Dog Care</a>
-    <a href="#contact">Contact</a>
-  </nav>  <div class="container"><!-- About Section -->
-<section id="about">
-  <h2>About Dogs</h2>
-  <p>
-    Dogs are loyal, friendly, and intelligent animals that have lived with
-    humans for thousands of years. They are known for their companionship,
-    protective nature, and ability to understand human emotions.
-  </p>
-</section>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>  <div class="container">
+    <h2>Available Items</h2><div class="products">
+  <div class="product-card">
+    <h3>🥬 Fresh Vegetables</h3>
+    <p>Locally sourced greens and vegetables.</p>
+    <div class="price">₱120 / pack</div>
+  </div>
 
-<!-- Breeds Section -->
-<section id="breeds">
-  <h2>Popular Dog Breeds</h2>
-  <ul>
-    <li>Labrador Retriever</li>
-    <li>German Shepherd</li>
-    <li>Golden Retriever</li>
-    <li>Bulldog</li>
-    <li>Poodle</li>
-  </ul>
-</section>
+  <div class="product-card">
+    <h3>🍎 Fruits</h3>
+    <p>Seasonal fresh fruits.</p>
+    <div class="price">₱150 / pack</div>
+  </div>
 
-<!-- Care Section -->
-<section id="care">
-  <h2>Basic Dog Care</h2>
-  <p>To keep dogs healthy and happy, owners should:</p>
-  <ul>
-    <li>Provide proper food and clean water</li>
-    <li>Give regular exercise</li>
-    <li>Maintain hygiene and grooming</li>
-    <li>Visit the veterinarian regularly</li>
-  </ul>
-</section>
+  <div class="product-card">
+    <h3>🥩 Meat</h3>
+    <p>Quality beef, pork, and chicken.</p>
+    <div class="price">₱320 / kg</div>
+  </div>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    Want to learn more about dogs? Feel free to reach out!
-  </p>
-  <p>Email: doglover@email.com</p>
-</section>
+  <div class="product-card">
+    <h3>🥛 Dairy Products</h3>
+    <p>Milk, cheese, and other dairy items.</p>
+    <div class="price">₱95+</div>
+  </div>
+</div>
 
   </div>  <footer>
-    <p>&copy; 2026 All About Dogs</p>
+    <p>&copy; 2026 FreshMart Grocery</p>
   </footer></body>
 </html>
