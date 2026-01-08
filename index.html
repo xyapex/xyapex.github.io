@@ -2,18 +2,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Simple Website</title>
+  <title>All About Dogs</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
-      background-color: #f4f4f4;
+      background-color: #fdfdfd;
       color: #333;
     }header {
-  background: #4a90e2;
+  background: #ff914d;
   color: #fff;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -21,6 +21,7 @@ nav {
   display: flex;
   justify-content: center;
   background: #333;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -37,7 +38,6 @@ nav a:hover {
   padding: 20px;
   max-width: 1000px;
   margin: auto;
-  background: #fff;
 }
 
 section {
@@ -45,8 +45,12 @@ section {
 }
 
 h2 {
-  color: #4a90e2;
+  color: #ff914d;
   margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 footer {
@@ -56,7 +60,7 @@ footer {
   color: #fff;
 }
 
-/* Simple Mobile Responsiveness */
+/* Mobile responsiveness */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -71,40 +75,58 @@ footer {
   </style>
 </head>
 <body>  <!-- Homepage -->  <header id="home">
-    <h1>Welcome to My Website</h1>
-    <p>A simple responsive website example</p>
+    <h1>All About Dogs</h1>
+    <p>Your simple guide to man’s best friend 🐶</p>
   </header>  <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="#about">About Dogs</a>
+    <a href="#breeds">Dog Breeds</a>
+    <a href="#care">Dog Care</a>
     <a href="#contact">Contact</a>
-  </nav>  <div class="container">
-    <!-- About Section -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        This website is created as a basic example project. It demonstrates a
-        clear homepage, multiple sections, simple styling, and mobile-friendly
-        design.
-      </p>
-    </section><!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
+  </nav>  <div class="container"><!-- About Section -->
+<section id="about">
+  <h2>About Dogs</h2>
+  <p>
+    Dogs are loyal, friendly, and intelligent animals that have lived with
+    humans for thousands of years. They are known for their companionship,
+    protective nature, and ability to understand human emotions.
+  </p>
+</section>
+
+<!-- Breeds Section -->
+<section id="breeds">
+  <h2>Popular Dog Breeds</h2>
   <ul>
-    <li>Project 1 – Sample Website</li>
-    <li>Project 2 – Simple Web App</li>
-    <li>Project 3 – Student Portfolio</li>
+    <li>Labrador Retriever</li>
+    <li>German Shepherd</li>
+    <li>Golden Retriever</li>
+    <li>Bulldog</li>
+    <li>Poodle</li>
+  </ul>
+</section>
+
+<!-- Care Section -->
+<section id="care">
+  <h2>Basic Dog Care</h2>
+  <p>To keep dogs healthy and happy, owners should:</p>
+  <ul>
+    <li>Provide proper food and clean water</li>
+    <li>Give regular exercise</li>
+    <li>Maintain hygiene and grooming</li>
+    <li>Visit the veterinarian regularly</li>
   </ul>
 </section>
 
 <!-- Contact Section -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>If you have questions, feel free to reach out.</p>
-  <p>Email: example@email.com</p>
+  <p>
+    Want to learn more about dogs? Feel free to reach out!
+  </p>
+  <p>Email: doglover@email.com</p>
 </section>
 
   </div>  <footer>
-    <p>&copy; 2026 My Simple Website</p>
+    <p>&copy; 2026 All About Dogs</p>
   </footer></body>
 </html>
